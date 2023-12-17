@@ -4,7 +4,7 @@
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
 <hook NAME="MapStyle" background="#f9f9f8">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" associatedTemplateLocation="template:/light_nord_template.mm"/>
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_nord_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -80,7 +80,37 @@
 </map_styles>
 </hook>
 <node TEXT="第一部分 入门" POSITION="bottom_or_right" ID="ID_1040999408" CREATED="1702838576207" MODIFIED="1702838581562">
-<node TEXT="第1章 R语言介绍" ID="ID_581100029" CREATED="1702838583604" MODIFIED="1702838594228"/>
+<node TEXT="第1章 R语言介绍" ID="ID_581100029" CREATED="1702838583604" MODIFIED="1702838594228">
+<node TEXT="1.1 为何要使用R" ID="ID_1460659211" CREATED="1702840079882" MODIFIED="1702840093334">
+<node TEXT="R是免费的！" ID="ID_1680253253" CREATED="1702840101487" MODIFIED="1702840187890">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node TEXT="R提供了全面的统计研究平台和多种数据分析技术" ID="ID_927552393" CREATED="1702840110119" MODIFIED="1702840194509">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node TEXT="R包含了其他软件中尚未可用的、先进的统计计算例程" ID="ID_932632042" CREATED="1702840139475" MODIFIED="1702840181223">
+<icon BUILTIN="smiley-neutral"/>
+</node>
+<node TEXT="R是一个可进行交互式数据分析和探索的强大平台" ID="ID_709230614" CREATED="1702840197925" MODIFIED="1702845786264">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node TEXT="R拥有顶尖水准的制图功能" ID="ID_1932673991" CREATED="1702845789019" MODIFIED="1702845815592">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node TEXT="R可以从多个数据源获取数据并转换" ID="ID_1644622910" CREATED="1702845819090" MODIFIED="1702845860026">
+<icon BUILTIN="smiley-neutral"/>
+</node>
+<node TEXT="R的功能可以被整合进其他语言编写的应用程序" ID="ID_762813497" CREATED="1702845870152" MODIFIED="1702845946792">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node TEXT="R可以运行在多个平台之上" ID="ID_47069273" CREATED="1702845894228" MODIFIED="1702845918061">
+<icon BUILTIN="smiley-neutral"/>
+</node>
+</node>
+<node TEXT="1.1 R的安装" ID="ID_523596895" CREATED="1702839901724" MODIFIED="1702839910351"/>
+<node TEXT="1.2 熟悉R语言" ID="ID_1240422880" CREATED="1702839913198" MODIFIED="1702839920212"/>
+<node TEXT="1.3 运行R程序" ID="ID_1080260170" CREATED="1702839920604" MODIFIED="1702839927371"/>
+</node>
 <node TEXT="第2章 创建数据集" ID="ID_955565794" CREATED="1702838598190" MODIFIED="1702838607535"/>
 <node TEXT="第3章 图形初阶" ID="ID_1846090514" CREATED="1702838610957" MODIFIED="1702838623963"/>
 <node TEXT="第4章 基本数据管理" ID="ID_1298743545" CREATED="1702838624902" MODIFIED="1702838638207"/>
