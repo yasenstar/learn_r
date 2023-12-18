@@ -3,7 +3,7 @@
 <node TEXT="R in Action&#xa;R语言实战" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1702860420180" LINK="https://zh.wikipedia.org/wiki/%E6%89%8E%E9%81%94%E7%88%BE">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font NAME="STKaiti" SIZE="15" BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="1.3">
+<hook NAME="MapStyle" background="#f9f9f8">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_nord_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -101,8 +101,7 @@
       https://zh.wikipedia.org/wiki/%E6%89%8E%E9%81%94%E7%88%BE
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="第一部分 入门" POSITION="bottom_or_right" ID="ID_1040999408" CREATED="1702838576207" MODIFIED="1702859385035">
 <font NAME="STKaiti"/>
 <node TEXT="第1章 R语言介绍" ID="ID_581100029" CREATED="1702838583604" MODIFIED="1702859385038">
@@ -151,7 +150,7 @@
 <node TEXT="1.3.2 获取帮助" POSITION="bottom_or_right" ID="ID_118146924" CREATED="1702849539855" MODIFIED="1702860459257">
 <font NAME="STKaiti"/>
 </node>
-<node TEXT="1.3.3 工作空间" POSITION="bottom_or_right" ID="ID_888114439" CREATED="1702849559494" MODIFIED="1702860459258">
+<node TEXT="1.3.3 工作空间" FOLDED="true" POSITION="bottom_or_right" ID="ID_888114439" CREATED="1702849559494" MODIFIED="1702860459258">
 <font NAME="STKaiti"/>
 <node TEXT="getwd(): 显示当前工作目录" ID="ID_1337868177" CREATED="1702849580504" MODIFIED="1702860484795">
 <font NAME="STKaiti"/>
@@ -187,19 +186,57 @@
 <font NAME="STKaiti"/>
 </node>
 </node>
-<node TEXT="1.3.4 输入和输出" POSITION="bottom_or_right" ID="ID_1558122083" CREATED="1702850248212" MODIFIED="1702860459259">
+<node TEXT="1.3.4 输入和输出" FOLDED="true" POSITION="bottom_or_right" ID="ID_1558122083" CREATED="1702850248212" MODIFIED="1702860459259">
 <font NAME="STKaiti"/>
-<node TEXT="1. 输入" ID="ID_1238349414" CREATED="1702865984402" MODIFIED="1702865994303">
+<node TEXT="1. 输入" ID="ID_1238349414" CREATED="1702865984402" MODIFIED="1702868524516">
+<font NAME="STKaiti"/>
 <node TEXT="source(&quot;filename&quot;)" ID="ID_29149048" CREATED="1702865997746" MODIFIED="1702866004590"/>
 </node>
-<node TEXT="2. 文本输出" ID="ID_1860987841" CREATED="1702865994908" MODIFIED="1702866010965">
-<node TEXT="sink(&quot;filename&quot;)" ID="ID_1064856722" CREATED="1702866010967" MODIFIED="1702866018540"/>
+<node TEXT="2. 文本输出" ID="ID_1860987841" CREATED="1702865994908" MODIFIED="1702868524519">
+<font NAME="STKaiti"/>
+<node TEXT="sink(&quot;filename&quot;, append=, split=)" ID="ID_1064856722" CREATED="1702866010967" MODIFIED="1702866056272"/>
+</node>
+<node TEXT="3. 图形输出" ID="ID_404929030" CREATED="1702866057007" MODIFIED="1702868524530">
+<font NAME="STKaiti"/>
+<node TEXT="bmp(&quot;filename.bmp&quot;)" ID="ID_976323988" CREATED="1702866084853" MODIFIED="1702866097625"/>
+<node TEXT="jpeg(&quot;filename.jpg&quot;)" ID="ID_1057480647" CREATED="1702866098199" MODIFIED="1702866105782"/>
+<node TEXT="pdf(&quot;filename.pdf&quot;)" ID="ID_1512905329" CREATED="1702866106128" MODIFIED="1702866111644"/>
+<node TEXT="png(&quot;filename.png&quot;)" ID="ID_1013392059" CREATED="1702866111878" MODIFIED="1702866119462"/>
+<node TEXT="postscript(&quot;filename.ps&quot;)" ID="ID_516391954" CREATED="1702866119641" MODIFIED="1702866127429"/>
+<node TEXT="svg(&quot;filename.svg&quot;)" ID="ID_1847029898" CREATED="1702866127589" MODIFIED="1702866137192"/>
+<node TEXT="win.metafile(&quot;filename.wmf&quot;)" ID="ID_280753905" CREATED="1702866137343" MODIFIED="1702866146314"/>
+<node TEXT="finally, use dev.off() to return output to screen" ID="ID_514232978" CREATED="1702866147540" MODIFIED="1702866162730"/>
+</node>
+</node>
+<node TEXT="Tips" POSITION="bottom_or_right" ID="ID_776323303" CREATED="1702869737316" MODIFIED="1702869749877">
+<node TEXT="Change GUI Language" ID="ID_889295468" CREATED="1702869749880" MODIFIED="1702869756668">
+<node TEXT="Use &quot;dir Rconsole /s&quot; to find out all Rconsole file" ID="ID_392563147" CREATED="1702869913068" MODIFIED="1702869938429"/>
+<node TEXT="/etc/Rconsole, set language = EN" ID="ID_493679108" CREATED="1702869756672" MODIFIED="1702869777101"/>
 </node>
 </node>
 </node>
 <node TEXT="1.4 R的包" FOLDED="true" ID="ID_1953283157" CREATED="1702849495494" MODIFIED="1702859385046">
 <font NAME="STKaiti"/>
-<node TEXT="1.4.1 包的概念" ID="ID_903381813" CREATED="1702849504018" MODIFIED="1702849515104"/>
+<node TEXT="1.4.1 包的概念" ID="ID_903381813" CREATED="1702849504018" MODIFIED="1702849515104">
+<node TEXT="包是R函数、数据、预编译代码以一种定义完善的格式组成的集合。计算机上存储包的名录称为库(library)" ID="ID_548243369" CREATED="1702923047724" MODIFIED="1702923105731"/>
+<node TEXT="Function.libPaths()" ID="ID_350451402" CREATED="1702868580063" MODIFIED="1702868590328"/>
+<node TEXT="search()" ID="ID_1863006097" CREATED="1702868573277" MODIFIED="1702868576882"/>
+</node>
+<node TEXT="1.4.2 包的安装" ID="ID_1020727333" CREATED="1702868554139" MODIFIED="1702868561090">
+<node TEXT="install.packages()" ID="ID_1232743429" CREATED="1702868564303" MODIFIED="1702868569772">
+<node TEXT="不加参数将显示一个CRAN镜像站点的列表" ID="ID_1309919700" CREATED="1702923157962" MODIFIED="1702923188540"/>
+<node TEXT="install.packages(&quot;packageName&quot;,dependencies = TRUE, repos = &apos;http://cran.rstudio.com/&apos;)" ID="ID_1503298445" CREATED="1702908389794" MODIFIED="1702908404459"/>
+</node>
+<node TEXT="update.packages()" ID="ID_1458095677" CREATED="1702868599077" MODIFIED="1702868604883"/>
+<node TEXT="installed.packages()" ID="ID_73800624" CREATED="1702868607421" MODIFIED="1702868612828"/>
+<node TEXT="remove.packages(&quot;package_name&quot;)" ID="ID_1431108126" CREATED="1702868722046" MODIFIED="1702868731805"/>
+</node>
+<node TEXT="1.4.3 包的载入" ID="ID_1813717364" CREATED="1702868616621" MODIFIED="1702868623607">
+<node TEXT="library(packageName)" ID="ID_649540584" CREATED="1702868629312" MODIFIED="1702868637687"/>
+</node>
+<node TEXT="1.4.4 包的使用" ID="ID_1953375735" CREATED="1702868643744" MODIFIED="1702868648858">
+<node TEXT="help(package=&quot;package_name&quot;)" ID="ID_1662085024" CREATED="1702868652717" MODIFIED="1702868663193"/>
+</node>
 </node>
 </node>
 <node TEXT="第2章 创建数据集" ID="ID_955565794" CREATED="1702838598190" MODIFIED="1702859385046">
