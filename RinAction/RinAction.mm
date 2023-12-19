@@ -275,13 +275,56 @@
 <node TEXT="数据挖掘和机器学习研究者：示例(example)和属性(attribute)" ID="ID_482893620" CREATED="1702947661780" MODIFIED="1702947691440"/>
 </node>
 <node TEXT="2.2 数据结构" ID="ID_771276140" CREATED="1702947280847" MODIFIED="1702947283778">
-<node TEXT="标量 (scalar)" ID="ID_1087397468" CREATED="1702947786015" MODIFIED="1702947912683"/>
+<node TEXT="标量 (scalar)" ID="ID_1087397468" CREATED="1702947786015" MODIFIED="1702947912683">
+<node TEXT="标量是只含一个元素的向量" ID="ID_1253919915" CREATED="1703002821915" MODIFIED="1703002825893"/>
+</node>
 <node TEXT="向量 (vector)" ID="ID_6669646" CREATED="1702947792099" MODIFIED="1702947962263">
 <arrowlink DESTINATION="ID_564991995"/>
 <node TEXT="用于存储数值型、字符型或逻辑性数据的一维数组" ID="ID_1053421276" CREATED="1702947920564" MODIFIED="1702947954139"/>
-<node TEXT="执行组合功能的函数c()用来创建向量" ID="ID_554889464" CREATED="1702947966685" MODIFIED="1702947989193"/>
+<node TEXT="执行组合功能的函数 c() 用来创建向量" ID="ID_554889464" CREATED="1702947966685" MODIFIED="1703002960650"/>
+<node TEXT="单个向量中的数据必须拥有相同的类型或模式" ID="ID_724341917" CREATED="1703002807733" MODIFIED="1703002812838"/>
+<node TEXT="注：R的向量的序号是从1开始计算的" ID="ID_1781391694" CREATED="1703002877787" MODIFIED="1703002901960"/>
 </node>
-<node TEXT="矩阵 (matrix)" ID="ID_481844168" CREATED="1702947795461" MODIFIED="1702947871173"/>
+<node TEXT="矩阵 (matrix)" ID="ID_481844168" CREATED="1702947795461" MODIFIED="1702947871173">
+<node TEXT="矩阵是一个二维数组，只是每个元素都拥有相同的模式" ID="ID_419258757" CREATED="1703002930149" MODIFIED="1703002933632"/>
+<node TEXT="通过函数 matrix() 创建矩阵" ID="ID_1277445753" CREATED="1703002941309" MODIFIED="1703003047355"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      myymatrix ＜- matrix(
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;vector, nrow=number_of_rows,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;ncol=number_of_columns,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;byrow=logical_value,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;dimnames=list(
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;char_vector_rownames,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;char_vector_colnames
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;)
+    </p>
+    <p>
+      )
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 <node TEXT="数组 (array)" ID="ID_564991995" CREATED="1702947797547" MODIFIED="1702947879449"/>
 <node TEXT="数据框 (data frame)" ID="ID_1313883336" CREATED="1702947799519" MODIFIED="1702947824425"/>
 <node TEXT="列表 (list)" ID="ID_99340152" CREATED="1702947804045" MODIFIED="1702947883642"/>
