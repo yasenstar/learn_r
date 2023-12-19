@@ -3,7 +3,7 @@
 <node TEXT="R in Action&#xa;R语言实战" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1702946090203" LINK="https://zh.wikipedia.org/wiki/%E6%89%8E%E9%81%94%E7%88%BE">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font NAME="STKaiti" SIZE="15" BOLD="true"/>
-<hook NAME="MapStyle" background="#f9f9f8">
+<hook NAME="MapStyle" background="#f9f9f8" zoom="1.3">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_nord_template.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -104,7 +104,7 @@
 </html></richcontent>
 <node TEXT="第一部分 入门" POSITION="bottom_or_right" ID="ID_1040999408" CREATED="1702838576207" MODIFIED="1702946090206">
 <font NAME="STKaiti"/>
-<node TEXT="第1章 R语言介绍" ID="ID_581100029" CREATED="1702838583604" MODIFIED="1702946090206">
+<node TEXT="第1章 R语言介绍" FOLDED="true" ID="ID_581100029" CREATED="1702838583604" MODIFIED="1702946090206">
 <font NAME="STKaiti"/>
 <node TEXT="1.1 为何要使用R" FOLDED="true" ID="ID_1460659211" CREATED="1702840079882" MODIFIED="1702946090206">
 <font NAME="STKaiti"/>
@@ -215,7 +215,7 @@
 </node>
 </node>
 </node>
-<node TEXT="1.4 R的包" ID="ID_1953283157" CREATED="1702849495494" MODIFIED="1702946090201">
+<node TEXT="1.4 R的包" FOLDED="true" ID="ID_1953283157" CREATED="1702849495494" MODIFIED="1702946090201">
 <font NAME="STKaiti"/>
 <node TEXT="1.4.1 包的概念" ID="ID_903381813" CREATED="1702849504018" MODIFIED="1702946090207">
 <font NAME="STKaiti"/>
@@ -252,9 +252,10 @@
 </node>
 <node TEXT="1.4.3 包的载入" ID="ID_1813717364" CREATED="1702868616621" MODIFIED="1702946090291">
 <font NAME="STKaiti"/>
-<node TEXT="library(packageName)" ID="ID_649540584" CREATED="1702868629312" MODIFIED="1702946090291">
+<node TEXT="Locd: library(packageName)" ID="ID_649540584" CREATED="1702868629312" MODIFIED="1702946747408">
 <font NAME="STKaiti"/>
 </node>
+<node TEXT="Unload: detach(&quot;package:packageName&quot;, unload=TRUE)" ID="ID_1738829685" CREATED="1702946747907" MODIFIED="1702946766436"/>
 </node>
 <node TEXT="1.4.4 包的使用" ID="ID_1953375735" CREATED="1702868643744" MODIFIED="1702946090292">
 <font NAME="STKaiti"/>
@@ -266,6 +267,11 @@
 </node>
 <node TEXT="第2章 创建数据集" ID="ID_955565794" CREATED="1702838598190" MODIFIED="1702946090293">
 <font NAME="STKaiti"/>
+<node TEXT="2.1 数据集的概念" ID="ID_1909403431" CREATED="1702947273380" MODIFIED="1702947280557"/>
+<node TEXT="2.2 数据结构" ID="ID_771276140" CREATED="1702947280847" MODIFIED="1702947283778"/>
+<node TEXT="2.3 数据的输入" ID="ID_423706841" CREATED="1702947283958" MODIFIED="1702947288273"/>
+<node TEXT="2.4 数据集的标注" ID="ID_1746754372" CREATED="1702947288438" MODIFIED="1702947293520"/>
+<node TEXT="2.5 处理数据对象的实用函数" ID="ID_1764944150" CREATED="1702947293708" MODIFIED="1702947305758"/>
 </node>
 <node TEXT="第3章 图形初阶" ID="ID_1846090514" CREATED="1702838610957" MODIFIED="1702946090293">
 <font NAME="STKaiti"/>
