@@ -133,13 +133,14 @@
 <icon BUILTIN="smiley-neutral"/>
 </node>
 </node>
-<node TEXT="1.2 R的安装" FOLDED="true" ID="ID_523596895" CREATED="1702839901724" MODIFIED="1702946090206">
+<node TEXT="1.2 R的安装" ID="ID_523596895" CREATED="1702839901724" MODIFIED="1702946090206">
 <font NAME="STKaiti"/>
 <node TEXT="CRAN http://cran.r-project.org" ID="ID_487572270" CREATED="1702849371871" MODIFIED="1702859385041" LINK="http://cran.r-project.org">
 <font NAME="STKaiti"/>
 </node>
 <node TEXT="RStudio" ID="ID_1283182456" CREATED="1702849416567" MODIFIED="1702859385044" LINK="https://posit.co/download/rstudio-desktop/">
 <font NAME="STKaiti"/>
+<node TEXT="Clear Console: cat(&quot;\014&quot;)" ID="ID_926684968" CREATED="1709777720183" MODIFIED="1709777741212"/>
 </node>
 </node>
 <node TEXT="1.3 熟悉R语言" FOLDED="true" ID="ID_1240422880" CREATED="1702839913198" MODIFIED="1702946090207">
@@ -275,7 +276,8 @@
 <node TEXT="数据挖掘和机器学习研究者：示例(example)和属性(attribute)" ID="ID_482893620" CREATED="1702947661780" MODIFIED="1702947691440"/>
 </node>
 <node TEXT="2.2 数据结构" ID="ID_771276140" CREATED="1702947280847" MODIFIED="1702947283778">
-<node TEXT="2.2.0 标量 (scalar)" FOLDED="true" ID="ID_1087397468" CREATED="1702947786015" MODIFIED="1703007326614">
+<node TEXT="2.2.0 标量 (scalar)" FOLDED="true" ID="ID_1087397468" CREATED="1702947786015" MODIFIED="1703037868112">
+<arrowlink DESTINATION="ID_564991995"/>
 <node TEXT="标量是只含一个元素的向量" ID="ID_1253919915" CREATED="1703002821915" MODIFIED="1703002825893"/>
 </node>
 <node TEXT="2.2.1 向量 (vector)" FOLDED="true" ID="ID_6669646" CREATED="1702947792099" MODIFIED="1703007321806">
@@ -285,9 +287,10 @@
 <node TEXT="单个向量中的数据必须拥有相同的类型或模式" ID="ID_724341917" CREATED="1703002807733" MODIFIED="1703002812838"/>
 <node TEXT="注：R的向量的序号是从1开始计算的" ID="ID_1781391694" CREATED="1703002877787" MODIFIED="1703002901960"/>
 </node>
-<node TEXT="2.2.2 矩阵 (matrix)" ID="ID_481844168" CREATED="1702947795461" MODIFIED="1703007333284">
+<node TEXT="2.2.2 矩阵 (matrix)" FOLDED="true" ID="ID_481844168" CREATED="1702947795461" MODIFIED="1703037871811">
+<arrowlink DESTINATION="ID_564991995"/>
 <node TEXT="矩阵是一个二维数组，只是每个元素都拥有相同的模式" ID="ID_419258757" CREATED="1703002930149" MODIFIED="1703002933632"/>
-<node TEXT="通过函数 matrix() 创建矩阵" ID="ID_1277445753" CREATED="1703002941309" MODIFIED="1703003047355"><richcontent TYPE="NOTE">
+<node TEXT="通过函数 matrix() 创建矩阵" ID="ID_1277445753" CREATED="1703002941309" MODIFIED="1703025445463"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -297,7 +300,10 @@
       myymatrix ＜- matrix(
     </p>
     <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;vector, nrow=number_of_rows,
+      &#xa0;&#xa0;&#xa0;&#xa0;vector,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;nrow=number_of_rows,
     </p>
     <p>
       &#xa0;&#xa0;&#xa0;&#xa0;ncol=number_of_columns,
@@ -321,8 +327,7 @@
       )
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="2.2.3 数组 (array)" FOLDED="true" ID="ID_564991995" CREATED="1702947797547" MODIFIED="1703007310328">
@@ -337,8 +342,7 @@
       myarray &lt;- array(vector, dimensions, dimnames)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="2.2.4 数据框 (data frame)" FOLDED="true" ID="ID_1313883336" CREATED="1702947799519" MODIFIED="1703007343582">
@@ -353,19 +357,19 @@
       mydata &lt;- data.frame(col1, col2, col3, ...)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="attach(): 将数据框添加到R的搜索路径中" ID="ID_1646011088" CREATED="1703006700479" MODIFIED="1703006723195"/>
 <node TEXT="detach()" ID="ID_179317878" CREATED="1703007358467" MODIFIED="1703007362188"/>
 <node TEXT="with()" ID="ID_1240989401" CREATED="1703007362530" MODIFIED="1703007364797"/>
-<node TEXT="实例标识符 (case identifier)" ID="ID_1479435616" CREATED="1703007054826" MODIFIED="1703007076597">
-<node TEXT="可通过数据框操作函数中的rowname选项指定" ID="ID_1051608524" CREATED="1703007089547" MODIFIED="1703007099109"/>
+<node TEXT="实例标识符 (case identifier)" FOLDED="true" ID="ID_1479435616" CREATED="1703007054826" MODIFIED="1709777225824">
+<node TEXT="可通过数据框操作函数中的rowname选项指定" ID="ID_1051608524" CREATED="1703007089547" MODIFIED="1709777225824"/>
 </node>
 </node>
 <node TEXT="2.2.5 因子 (Factor)" FOLDED="true" ID="ID_487659233" CREATED="1703007749135" MODIFIED="1703007790350">
 <node TEXT="类别（名义型）变量和有序类别（有序型）变量在R中称为因子（factor）" ID="ID_1074274305" CREATED="1703007802138" MODIFIED="1703007804387"/>
 <node TEXT="函数factor()以一个整数向量的形式存储类别值，整数的取值范围是[1...k]（其中k是名义型变量中唯一值的个数），同时一个由字符串（原始值）组成的内部向量将映射到这些整数上。" ID="ID_1172709118" CREATED="1703007815710" MODIFIED="1703007818490"/>
+<node TEXT="数值型变量可以用levels和labels参数来编码成因子" ID="ID_734498784" CREATED="1709845616482" MODIFIED="1709845638250"/>
 </node>
 <node TEXT="2.2.6 列表 (list)" FOLDED="true" ID="ID_99340152" CREATED="1702947804045" MODIFIED="1703009331766">
 <node TEXT="列表就是一些对象（或成分，component）的有序集合。列表允许你整合若干（可能无关的）对象到单个对象名下。" ID="ID_1655611816" CREATED="1703009355549" MODIFIED="1703009359580"/>
