@@ -2,6 +2,8 @@
 
 ## R in Action
 
+![R-in-Action-cover](./RinAction/img/R_in_Action_book-cover.png)
+
 See [here](./RinAction/README.md) for the learning notes.
 
 ## Using Shiny in R
